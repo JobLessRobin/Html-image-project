@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Alignment</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .form-container {
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background: #f9f9f9;
+    }
+    .form-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    .form-group label {
+      width: 200px;
+      font-size: 14px;
+    }
+    .form-group input,
+    .form-group select {
+      flex: 1;
+      padding: 5px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .form-actions {
+      text-align: right;
+    }
+    .form-actions button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .form-actions button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <form>
+      <div class="form-group">
+        <label for="civicrm">Do you use CiviCRM?</label>
+        <select id="civicrm" name="civicrm">
+          <option value="">Select</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="experience">How long have you been using CiviCRM?</label>
+        <select id="experience" name="experience">
+          <option value="">Select</option>
+          <option value="less1">Less than 1 year</option>
+          <option value="1-3">1-3 years</option>
+          <option value="3plus">3+ years</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="cms">Which CMS do you use?</label>
+        <select id="cms" name="cms">
+          <option value="">Select</option>
+          <option value="wordpress">WordPress</option>
+          <option value="drupal">Drupal</option>
+          <option value="joomla">Joomla</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="first-name">
+      </div>
+      <div class="form-group">
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="last-name">
+      </div>
+      <div class="form-group">
+        <label for="address">Street Address</label>
+        <input type="text" id="address" name="address">
+      </div>
+      <div class="form-group">
+        <label for="city">City</label>
+        <input type="text" id="city" name="city">
+      </div>
+      <div class="form-group">
+        <label for="postal">Postal Code</label>
+        <input type="text" id="postal" name="postal">
+      </div>
+      <div class="form-group">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="">Select</option>
+          <option value="us">United States</option>
+          <option value="canada">Canada</option>
+          <option value="uk">United Kingdom</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="state">State</label>
+        <select id="state" name="state">
+          <option value="">Select</option>
+          <option value="ny">New York</option>
+          <option value="ca">California</option>
+          <option value="tx">Texas</option>
+        </select>
+      </div>
+      <div class="form-actions">
+        <button type="submit">Save</button>
+        <button type="reset">Cancel</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
